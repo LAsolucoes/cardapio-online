@@ -1,17 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: var(--font-poppins);
 }
-:root{
+
+:root {
     --white: rgb(255, 255, 255);
     --yellow: #F4C949;
     --black: #000;
+    --gray: gray;
 
 }
+body{
+    background-image: url(../../public/assets/bg-icons-2.png);
+    width: 100vw;
+    background-color: #f4c9492b;
+}
 
-button{
+p {
+    color: var(--gray);
+}
+
+button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,40 +33,45 @@ button{
     cursor: pointer;
     gap: 10px;
     transition: 0.6s ease;
+
 }
 
-.btnWhite{
+.btnWhite {
     background-color: var(--white);
     color: var(--black);
 }
-.btnWhite:hover{
+
+.btnWhite:hover {
     background-color: var(--yellow);
 }
 
-.btnYellow{
+.btnYellow {
     background-color: var(--yellow);
     color: var(--white);
     display: flex;
     align-items: center;
     padding: 11px 16px;
 }
-.btnYellow:hover{
+
+.btnYellow:hover {
     background-color: var(--white);
     color: var(--black);
 }
 
-.btnContact{
+.btnContact {
     display: flex;
     flex-direction: row-reverse;
     padding: 4px 16px;
     background-color: var(--white);
     color: var(--black);
 }
-.btnContact:hover{
-   background-color: var(--yellow);
-   color: var(--white);
+
+.btnContact:hover {
+    background-color: var(--yellow);
+    color: var(--white);
 }
-.btnContact .IconPhone{
+
+.btnContact .IconPhone {
     background-color: var(--yellow);
     display: flex;
     font-size: 1.9rem;
@@ -64,17 +80,17 @@ button{
     color: var(--white);
 }
 
-.IconBag{
+.IconBag {
     background-color: var(--yellow);
     padding: 6px;
     color: #000;
     display: flex;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
-    border-radius:8px;    
-    font-size: 25px;   
+    border-radius: 8px;
+    font-size: 25px;
 }
 
-.IconSocialMedia{
+.IconSocialMedia {
     color: var(--black);
 }

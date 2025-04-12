@@ -5,6 +5,7 @@
   margin: 10px auto;
   max-width: 1024px;
 }
+
 .MainContent {
   max-width: 350px;
   display: flex;
@@ -12,6 +13,7 @@
   padding: 16px;
   gap: 20px;
 }
+
 .MainContent h1 {
   font-size: 2.3rem;
 }
@@ -68,7 +70,7 @@
     margin: 0px auto;
   }
 
-  .MainContent{
+  .MainContent {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -76,9 +78,9 @@
     gap: 5px;
   }
 
-  .MainContentImage .Testimony{
-    width: 250px;
+  .MainContentImage .Testimony {
     right: 20px;
+
   }
 
 }
