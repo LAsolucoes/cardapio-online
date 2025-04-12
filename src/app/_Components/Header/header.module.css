@@ -1,0 +1,48 @@
+.HeaderLandPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1024px;
+  margin: 10px auto;
+  padding: 8px;
+}
+
+.MenuNavegation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.MenuNavegation a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.ButtonBars {
+  display: none;
+}
+
+.IconBars {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .HeaderLandPage {
+    margin-bottom: 0px;
+    padding: 2px;
+  }
+
+  .MenuNavegation {
+    display: none;
+  }
+
+  .ButtonMyCart {
+    display: none;
+  }
+  .ButtonBars {
+    display: block;
+  }
+}

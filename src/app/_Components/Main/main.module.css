@@ -1,0 +1,84 @@
+.MainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px auto;
+  max-width: 1024px;
+}
+.MainContent {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 20px;
+}
+.MainContent h1 {
+  font-size: 2.3rem;
+}
+
+.MainContent span {
+  color: var(--yellow);
+}
+
+.MainContent p {
+  font-size: 0.8rem;
+  padding-right: 10px;
+}
+
+.MainContentButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.MainButtonSocialMedia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.MainContentImage {
+  position: relative;
+}
+
+.MainContentImage .Testimony {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+  background-color: var(--white);
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.MainContentImage .Testimony span {
+  color: var(--yellow);
+  font-weight: bold;
+  margin-left: 50%;
+}
+
+@media (max-width: 768px) {
+  .MainContainer {
+    flex-direction: column;
+    margin: 0px auto;
+  }
+
+  .MainContent{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+
+  .MainContentImage .Testimony{
+    width: 250px;
+    right: 20px;
+  }
+
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --white: rgb(255, 255, 255);
+    --yellow: #F4C949;
+    --black: #000;
+
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.050);
+    cursor: pointer;
+    gap: 10px;
+    transition: 0.6s ease;
+}
+
+.btnWhite{
+    background-color: var(--white);
+    color: var(--black);
+}
+.btnWhite:hover{
+    background-color: var(--yellow);
+}
+
+.btnYellow{
+    background-color: var(--yellow);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 11px 16px;
+}
+.btnYellow:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btnContact{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4px 16px;
+    background-color: var(--white);
+    color: var(--black);
+}
+.btnContact:hover{
+   background-color: var(--yellow);
+   color: var(--white);
+}
+.btnContact .IconPhone{
+    background-color: var(--yellow);
+    display: flex;
+    font-size: 1.9rem;
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.IconBag{
+    background-color: var(--yellow);
+    padding: 6px;
+    color: #000;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    border-radius:8px;    
+    font-size: 25px;   
+}
+
+.IconSocialMedia{
+    color: var(--black);
+}
