@@ -1,0 +1,132 @@
+.ModalBackground {
+    width: 100vw;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.800);
+    position: fixed;
+    top: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.ModalContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    min-width: 70%;
+    min-height: 80%;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 16px;
+    
+}
+
+.ModalContent {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+    min-height: 100%;
+    flex-grow: 1;
+   
+   
+}
+
+.TitleModal  {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ImageProduct {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 2 / 1;
+}
+
+.Image {
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.Product{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    
+    
+}
+.NameProduct{
+    font-size: 0.8rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.Description{
+    color: var(--gray);
+    font-size: 0.8rem;
+    margin-top: 5px;
+
+}
+
+.PriceProduct{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.FooterModal{
+    display: flex;
+}
+
+.FooterModal button{
+  width: 100%; 
+    
+}
+
+
+.ButtonAddRemove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--white);
+    margin: 6px auto;
+    border-radius: 8px;
+
+}
+
+.ButtonAddRemove button {
+    color: var(--black);
+    font-size: 0.8rem;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+@media (max-width: 768px ) {
+    .ModalContainer{
+        width: 95%;
+        top: 42%;
+    }
+    .ImageProduct {
+    
+        aspect-ratio: 4 / 3;
+    }
+
+    .Image {
+        object-fit: fill;
+        border-radius: 10px;
+    }
+}

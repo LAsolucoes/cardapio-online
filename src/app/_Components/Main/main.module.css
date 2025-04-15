@@ -43,6 +43,13 @@
 
 .MainContentImage {
   position: relative;
+  max-width: 400px;
+  width: 100%;
+  aspect-ratio: 4 / 3; 
+}
+
+.BurguerImage{
+  object-fit: cover;
 }
 
 .MainContentImage .Testimony {

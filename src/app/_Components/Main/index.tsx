@@ -49,10 +49,10 @@ export function Main() {
                 <Image
                     src={ImageBurger}
                     alt={""}
-                    width={400}
-                    height={300}
+                    fill
                     quality={100}
                     priority
+                    className={styles.BurguerImage}
 
                 />
                 <div className={styles.Testimony}>

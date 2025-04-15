@@ -15,6 +15,7 @@
 body{
     background-image: url(../../public/assets/bg-icons-2.png);
     background-color: #f4c9492b;
+ 
 }
 
 p {
@@ -22,6 +23,7 @@ p {
 }
 
 button {
+ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +35,16 @@ button {
     gap: 10px;
     transition: 0.6s ease;
 
+}
+
+.btnDanger{
+    background-color: red;
+    color: var(--white) !important;
+}
+
+.btnSuccess{
+    background-color: rgb(70, 151, 70);
+    color: var(--white) !important;
 }
 
 .btnWhite {
@@ -91,5 +103,6 @@ button {
 }
 
 .IconSocialMedia {
+    background-color: var(--white);
     color: var(--black);
 }
