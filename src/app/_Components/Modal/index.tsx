@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
 import styles from "./modal.module.css";
 interface ModalProps {
   title: string;
@@ -18,31 +20,21 @@ export function Modal({
   price,
   onClick,
 }: ModalProps) {
-  const [addAmount, setAddAmount] = useState(0);
 
-  function handleAdd() {
-    setAddAmount(addAmount + 1);
-  }
-
-  function handleRemove() {
-    if (!addAmount) {
-      setAddAmount(addAmount);
-      return;
-    }
-    setAddAmount(addAmount - 1);
-  }
 
   return (
     <div className={styles.ModalBackground}>
       <div className={styles.ModalContainer}>
         <div className={styles.ModalContent}>
           <div className={styles.TitleModal}>
-            <h1>{title}</h1>
-
-            <button onClick={onClick} className="btnDanger">
-              {" "}
-              X{" "}
-            </button>
+            <div className={styles.ButtonReturn}>
+              <button onClick={onClick}>
+                <FaArrowLeft />
+              </button>
+            </div>
+            <div className={styles.TextTitle}>
+              <h1>Detalhes do Produto</h1>
+            </div>
           </div>
 
           <div className={styles.ImageProduct}>
@@ -57,28 +49,19 @@ export function Modal({
           </div>
 
           <div className={styles.Product}>
-            <label className={styles.NameProduct}>Descrição:</label>
+            <label className={styles.NameProduct}>{title}</label>
             <label className={styles.Description}>{description}</label>
-          </div>
-          <hr />
 
-          <div className={styles.PriceProduct}>
-            <label className={styles.Price}>{price}</label>
+            <div className={styles.PriceProduct}>
+              <label className={styles.Price}>R$ {price}</label>
+            </div>
           </div>
+         
         </div>
 
         <div className={styles.FooterModal}>
-          <button className="btnSuccess">Adicionar </button>
+          <Link href="/pedido" className="btnSuccess">Ir ao Cardapio </Link>
 
-          <div className={styles.ButtonAddRemove}>
-            <button onClick={handleRemove} className="btnDanger">
-              -
-            </button>
-            <label> {addAmount} </label>
-            <button onClick={handleAdd} className="btnSuccess">
-              +
-            </button>
-          </div>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@
     --yellow: #F4C949;
     --black: #000;
     --gray: gray;
+    --dark: rgba(0, 0, 0, 0.749);
 
 }
 body{
@@ -21,7 +22,13 @@ body{
 p {
     color: var(--gray);
 }
-
+input[type="radio"]{
+    padding: 5px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    
+}
 button {
  
     display: flex;

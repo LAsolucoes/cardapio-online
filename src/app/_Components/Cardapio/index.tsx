@@ -19,7 +19,7 @@ export function Cardapio() {
   const [openCloseModal, setOpenCloseModal] = useState(false);
   const [modalId, setModalId] = useState("");
 
-  const [seeMore, setSeeMore] = useState(false);
+ 
 
 
   
@@ -39,9 +39,7 @@ export function Cardapio() {
     ListProducts();
   }, []);
 
-  function SeeMore() {
-    alert("ok");
-  }
+ 
 
   function handleSelectItem(e: React.MouseEvent<HTMLElement>) {
     const elementId = e.currentTarget.id;
