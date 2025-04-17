@@ -1,9 +1,16 @@
+"use client"
 import Image from "next/image";
+import { useEffect } from "react";
+import { initScrollReveal } from "@/app/helpers/scrollReavealConfig";
 import ImageReserva from "../../../../../public/assets/icone-reserva.svg";
 import styles from "./reservas.module.css";
 export function Reservas() {
+
+useEffect(()=>{
+  initScrollReveal()
+},[])
   return (
-    <section className={styles.ContainerReservas} id="reservas">
+    <section className={` reveal ${styles.ContainerReservas}`} id="reservas">
       <div className={styles.ContentReservas}>
         <div>
           <label>RESERVA</label>

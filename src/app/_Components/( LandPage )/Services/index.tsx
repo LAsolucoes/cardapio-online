@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
-import ScrollReveal from "scrollreveal";
+import { initScrollReveal } from "@/app/helpers/scrollReavealConfig";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
@@ -9,43 +9,32 @@ import ImageDelivery from "../../../../../public/assets/icone-delivery.svg";
 import ImageQuality from "../../../../../public/assets/icone-qualidade.svg";
 import styles from "./services.module.css";
 
+
+
 export function Services() {
   useEffect(() => {
-    ScrollReveal().reveal(`.${styles.SectionCard}`, {
-      origin: "bottom",
-      distance: "40px",
-      duration: 800,
-      delay: 200,
-      easing: "ease-out",
-      interval: 200, // animação em cascata
-      reset: true,
-    });
+    initScrollReveal();
   }, []);
 
- const [ isAtTop , setIsAtTop] = useState(true)
- useEffect(()=>{
-     function handleScroll(){
-      setIsAtTop(window.scrollY < 200)
-     }
-
-     window.addEventListener("scroll" , handleScroll)
-
-
-     return ()=> window.removeEventListener("scroll" , handleScroll)
-
-
- }, [])
-
+/* Esconder botão de navegação - scroll -  <FaArrowUp />  */
+  const [isAtTop, setIsAtTop] = useState(true);
+  useEffect(() => {
+    function handleScroll() {
+      setIsAtTop(window.scrollY < 200);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <section className={styles.SectionContainer} id="services">
       <article>
-        <div className={styles.SectionTitle}>
+        <div className={` reveal ${styles.SectionTitle}`}>
           <label htmlFor="">SERVIÇOS</label>
           <h2>Como são nossos serviços?</h2>
         </div>
         <div className={styles.TypeServices}>
-          <div className={styles.SectionCard}>
+          <div className={`reveal ${styles.SectionCard}`}>
             <Image
               src={ImageOrder}
               alt="Imagem Usuário realizando Pedido"
@@ -56,7 +45,7 @@ export function Services() {
             <h3>Fácil de pedir</h3>
             <p>Você só precisa de alguns passos para pedir sua comida.</p>
           </div>
-          <div className={styles.SectionCard}>
+          <div className={` reveal ${styles.SectionCard}`}>
             <Image
               src={ImageDelivery}
               alt="Imagem entregador Delivery"
@@ -67,7 +56,7 @@ export function Services() {
             <h3>Entrega Rápidar</h3>
             <p>Nossa entrega é sempre pontual, rápida e segura.</p>
           </div>
-          <div className={styles.SectionCard}>
+          <div className={` reveal ${styles.SectionCard}`}>
             <Image
               src={ImageQuality}
               alt="Imagem Usuário realizando Pedido"
@@ -82,18 +71,14 @@ export function Services() {
           </div>
         </div>
       </article>
-    
-    
-      <div className={styles.ContainerBtnColum}>
-        <Link 
-        href="#header"
-         className={`${styles.ButtonColum} ${isAtTop ? styles.hidden: "" }`}
-         
-         >
-          <FaArrowUp />{" "}
-        </Link >
 
-        
+      <div className={styles.ContainerBtnColum}>
+        <Link
+          href="#header"
+          className={`${styles.ButtonColum} ${isAtTop ? styles.hidden : ""}`}
+        >
+          <FaArrowUp />
+        </Link>
       </div>
     </section>
   );

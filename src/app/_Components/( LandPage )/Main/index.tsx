@@ -1,19 +1,29 @@
+"use client"
+
 import Image from "next/image";
+import Link from "next/link";
+import { initScrollReveal } from "@/app/helpers/scrollReavealConfig";
 import { FaPhoneAlt } from "react-icons/fa";
 
 import ImageBurger from "../../../../../public/assets/burguer.png";
-import styles from "./main.module.css";
-import Link from "next/link";
 import { ButtonsMidiasSociais } from "../../ButtonsMidiasSociais";
+import styles from "./main.module.css";
+import { useEffect } from "react";
 
 export function Main() {
+
+  useEffect(()=>{
+    initScrollReveal()
+  }, [])
+
+
+
   /* Menssage WhatsApp */
   const numberWhatsApp = "5511992619304";
-  const messageWhatsApp = "Olá! Gostaria de mais informações sobre o Cardápio";
-  const messageCodificada = encodeURIComponent(messageWhatsApp);
+  
 
   return (
-    <main className={styles.MainContainer}>
+    <main className={` reveal ${styles.MainContainer}`}>
       <div className={styles.MainContent}>
         <h1>
           Escolha sua comida <span>favorita.</span>

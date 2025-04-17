@@ -1,12 +1,19 @@
+"use client"
 import Image from "next/image";
+import { useEffect } from "react";
+import { initScrollReveal } from "@/app/helpers/scrollReavealConfig";
 import { FaStar } from "react-icons/fa6";
 import { FaStarHalfStroke } from "react-icons/fa6";
 import ImageProduct from "../../../../../public/assets/pizzas.png";
 import ImageAvatar from "../../../../../public/assets/diego.jpg";
 import styles from "./depoimentos.module.css";
 export function Depoimentos() {
+
+useEffect(()=>{
+   initScrollReveal()
+},[])
   return (
-    <section className={styles.SectionDepoimentos} id="depoimentos">
+    <section className={`reveal ${styles.SectionDepoimentos}`} id="depoimentos">
       <div className={styles.ContainerDepoimentos}>
         <div className={styles.ImageProduct}>
           <Image
