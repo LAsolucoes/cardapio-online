@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaBagShopping } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
-import { Button } from "../Button";
+import { Button } from "../../( Buttons )/Button";
 import LogoTipo from "../../../../../public/assets/logo.png";
 import styles from "./header.module.css";
 

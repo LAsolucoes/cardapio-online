@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ImageLogo from "../../../../../public/assets/logo.png";
 import styles from "./footer.module.css";
-import { ButtonsMidiasSociais } from "../../ButtonsMidiasSociais";
+import { ButtonsMidiasSociais } from "../../( Buttons )/ButtonsMidiasSociais";
 export function Footer() {
   return (
     <footer className={styles.Footer}>

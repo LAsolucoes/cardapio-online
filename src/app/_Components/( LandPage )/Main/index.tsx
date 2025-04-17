@@ -6,7 +6,7 @@ import { initScrollReveal } from "@/app/helpers/scrollReavealConfig";
 import { FaPhoneAlt } from "react-icons/fa";
 
 import ImageBurger from "../../../../../public/assets/burguer.png";
-import { ButtonsMidiasSociais } from "../../ButtonsMidiasSociais";
+import { ButtonsMidiasSociais } from "../../( Buttons )/ButtonsMidiasSociais";
 import styles from "./main.module.css";
 import { useEffect } from "react";
 
