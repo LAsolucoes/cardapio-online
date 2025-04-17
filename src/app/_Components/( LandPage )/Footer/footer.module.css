@@ -1,0 +1,45 @@
+.Footer{
+    background-color: #FFF2CC;
+    padding: 16px;
+
+}
+.ContetFooter{
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
+
+.ContainerImage{
+    max-width: 120px;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 4/3;
+    position: relative;
+}
+.ImageLogo{
+    object-fit: cover;
+}
+
+.Copy span{
+    color: var(--dark);
+    font-weight: bold;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .Copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContetFooter label{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+}

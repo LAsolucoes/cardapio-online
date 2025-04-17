@@ -27,19 +27,18 @@
   padding-right: 10px;
 }
 
-.MainContentButtons {
+.MainContentLinks {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 10px 0px;
 }
 
-.MainButtonSocialMedia {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
+.MainContentLinks a{
+  text-decoration: none;
+  border-radius: 10px;
 }
+
 
 .MainContentImage {
   position: relative;

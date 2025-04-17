@@ -1,0 +1,180 @@
+.ContainerCardapio {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffda6b, white, white);
+    position: relative;
+
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 95%;
+    margin: 0px auto;
+}
+
+/* Classe que aplica um style global para todos os cards */
+.Card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%;
+    margin: 15px auto;
+    box-shadow: 0px 5px 4px 0px rgba(128, 128, 128, 0.342);
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+
+}
+
+.ButtonContainer {
+    display: flex;
+    flex: 1;
+}
+
+.ButtonContainer a {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--dark);
+}
+
+.TextTitle {
+    display: flex;
+    flex: 2;
+}
+
+.TextTitle h1 {
+    font-size: 1.1rem;
+}
+
+/* -------------------------- */
+
+.ImageProductSelected {
+    border: 2px solid var(--white);
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 2;
+    position: relative;
+    box-shadow: 3px 4px 4px 0px rgba(128, 128, 128, 0.342);
+
+}
+
+.ImageProduct {
+    object-fit: contain;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* ****************************** */
+
+.DescriptionProduct h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.DescriptionProduct p {
+    font-size: 0.9rem;
+    color: var(--dark);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.DescriptionProduct span {
+    color: var(--yellow);
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+/* ************************ */
+
+.Additional {
+    margin: 25px 0px;
+}
+
+.AdditionalTitle h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.AdditionalTitle label {
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.OptionAdditional {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.OptionAdditionalPrice {
+    display: flex;
+    gap: 10px;
+
+}
+
+.TextArea {
+    border: none;
+    font-size: 16px;
+    color: var(--dark);
+    min-width: 100%;
+    min-height: 100px;
+    outline: none;
+}
+
+/* ******************************** */
+
+.Footer{
+    display: flex;
+    margin: 10px auto;
+}
+
+
+
+.ContentFooter {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    max-width: 1024px;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #FFF2CC;
+    border: 1px solid #FFBF00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ContainerButtonFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ContainerButtonFooter button {
+    background-color: #ffbf008c;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ButtonAddFooter button {
+    background-color: #FFBF00;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1rem;
+}

@@ -1,14 +1,20 @@
-import { Header } from "@/app/_Components/Header";
-import { Main } from "./_Components/Main";
-import { Services } from "./_Components/Services";
-import { Cardapio } from "./_Components/Cardapio";
+import { Header } from "@/app/_Components/( LandPage )/Header";   
+import { Main } from "./_Components/( LandPage )/Main";
+import { Services } from "./_Components/( LandPage )/Services";
+import { Depoimentos } from "./_Components/( LandPage )/Depoimentos";
+import { Reservas } from "./_Components/( LandPage )/Reservas";
+import { Footer } from "./_Components/( LandPage )/Footer";
+
 export default function Home() {
   return (
     <>
+     
       <Header />
       <Main />
       <Services />
-      <Cardapio />
+      <Depoimentos />
+      <Reservas />
+      <Footer />
     </>
   );
 }

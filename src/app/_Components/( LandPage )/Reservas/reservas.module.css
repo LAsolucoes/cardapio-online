@@ -1,0 +1,52 @@
+.ContainerReservas {
+    max-width: 1024px;
+    margin: 150px auto;
+    padding: 20px;
+}
+
+.ContentReservas {
+    background-color: #FFF2CC;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ContainerReservas label {
+    color: var(--yellow);
+    font-weight: 500;
+
+}
+
+.ContainerReservas h3 {
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.MessageReserva {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.ContainerReservas p {
+    font-size: 0.9rem;
+
+}
+
+.ContainerReservas button {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+
+@media (max-width: 768px) {
+    .ContentReservas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+}

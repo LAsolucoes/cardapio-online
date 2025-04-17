@@ -1,12 +1,44 @@
+"use client"
+import { useEffect, useState } from "react";
+import ScrollReveal from "scrollreveal";
 import Image from "next/image";
-import ImageOrder from "../../../../public/assets/icone-pedido.svg";
-import ImageDelivery from "../../../../public/assets/icone-delivery.svg"
-import ImageQuality from "../../../../public/assets/icone-qualidade.svg"
+import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa";
+import ImageOrder from "../../../../../public/assets/icone-pedido.svg";
+import ImageDelivery from "../../../../../public/assets/icone-delivery.svg";
+import ImageQuality from "../../../../../public/assets/icone-qualidade.svg";
 import styles from "./services.module.css";
 
 export function Services() {
+  useEffect(() => {
+    ScrollReveal().reveal(`.${styles.SectionCard}`, {
+      origin: "bottom",
+      distance: "40px",
+      duration: 800,
+      delay: 200,
+      easing: "ease-out",
+      interval: 200, // animação em cascata
+      reset: true,
+    });
+  }, []);
+
+ const [ isAtTop , setIsAtTop] = useState(true)
+ useEffect(()=>{
+     function handleScroll(){
+      setIsAtTop(window.scrollY < 200)
+     }
+
+     window.addEventListener("scroll" , handleScroll)
+
+
+     return ()=> window.removeEventListener("scroll" , handleScroll)
+
+
+ }, [])
+
+
   return (
-    <section className={styles.SectionContainer}>
+    <section className={styles.SectionContainer} id="services">
       <article>
         <div className={styles.SectionTitle}>
           <label htmlFor="">SERVIÇOS</label>
@@ -29,7 +61,6 @@ export function Services() {
               src={ImageDelivery}
               alt="Imagem entregador Delivery"
               className={styles.ImageServices}
-             
               quality={100}
               priority
             />
@@ -41,15 +72,29 @@ export function Services() {
               src={ImageQuality}
               alt="Imagem Usuário realizando Pedido"
               className={styles.ImageServices}
-              
               quality={100}
               priority
             />
             <h3>Melhor qualidade</h3>
-            <p>Não só rápidez na entrega, a qualidade tambem é o nosso forte.</p>
+            <p>
+              Não só rápidez na entrega, a qualidade tambem é o nosso forte.
+            </p>
           </div>
         </div>
       </article>
+    
+    
+      <div className={styles.ContainerBtnColum}>
+        <Link 
+        href="#header"
+         className={`${styles.ButtonColum} ${isAtTop ? styles.hidden: "" }`}
+         
+         >
+          <FaArrowUp />{" "}
+        </Link >
+
+        
+      </div>
     </section>
   );
 }

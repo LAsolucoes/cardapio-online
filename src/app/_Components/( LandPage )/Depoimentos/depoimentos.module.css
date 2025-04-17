@@ -1,0 +1,88 @@
+.SectionDepoimentos{
+    max-width: 1024px;
+    margin: 180px auto;
+}
+.ContainerDepoimentos{
+    display: flex;
+    padding: 16px;
+    gap: 20px;
+}
+
+.ImageProduct{
+   width: 100%;
+   max-width: 500px;
+   height: auto;
+   aspect-ratio: 4 / 3;
+   position: relative;
+}
+.ImageProduct{
+    object-fit: cover;
+}
+
+.Depoimentos{
+    display: flex;
+    flex-direction: column;
+}
+.TitleDepoimentos{
+    margin-bottom: 10px;
+}
+
+.TitleDepoimentos label{
+    color: var(--yellow);
+    font-weight: 500;
+}
+.DepoimentosClient{
+    display: flex;
+    gap: 10px;
+}
+
+.ContainerImageAvatar{
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    aspect-ratio: 4/3;
+    position: relative;
+}
+.ImageAvatar{
+    border-radius: 70%;
+    object-fit: cover;
+}
+.Stars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Stars span{
+    color: var(--yellow);
+}
+.Stars label{
+    margin-left: 5px;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+.ContentDepoimento{
+    margin: 20px ;
+   
+}
+
+.btnNavegation{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.btnNavegation button{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+
+@media (max-width: 768px) {
+    .ContainerDepoimentos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

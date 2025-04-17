@@ -1,0 +1,25 @@
+
+.MainButtonSocialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  
+}
+
+.MainButtonSocialMedia a{
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s ease;
+}
+.MainButtonSocialMedia a:hover{
+  background-color: var(--yellow);
+  color: var(--white);
+  
+}

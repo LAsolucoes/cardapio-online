@@ -13,6 +13,9 @@
     --dark: rgba(0, 0, 0, 0.749);
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(../../public/assets/bg-icons-2.png);
     background-color: #f4c9492b;
@@ -69,6 +72,8 @@ button {
     display: flex;
     align-items: center;
     padding: 11px 16px;
+    font-size: 0.8rem;
+    transition: 0.6s ease;
 }
 
 .btnYellow:hover {
@@ -78,10 +83,14 @@ button {
 
 .btnContact {
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     padding: 4px 16px;
     background-color: var(--white);
     color: var(--black);
+    font-size: 0.8rem;
+    transition: 0.6s ease;
+    gap: 5px;
 }
 
 .btnContact:hover {
@@ -107,9 +116,4 @@ button {
     justify-content: center;
     border-radius: 8px;
     font-size: 25px;
-}
-
-.IconSocialMedia {
-    background-color: var(--white);
-    color: var(--black);
 }
