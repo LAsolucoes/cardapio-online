@@ -4,7 +4,7 @@ export const initScrollReveal = () => {
   ScrollReveal().reveal(".reveal", {
     origin: "bottom",
     distance: "40px",
-    duration: 700,
+    duration: 500,
     delay: 200,
     easing: "ease-out",
     interval: 200,

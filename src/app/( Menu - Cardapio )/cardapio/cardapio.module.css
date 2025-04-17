@@ -2,16 +2,17 @@
     width: 100%;
     height: 100vh;
     background-color:  var(--color-background)
-    
+}
 
+.Container{
+    margin: 0px auto;
+    max-width: 800px;
 }
 .CardBackground{
     background-color: var(--yellow-secondary);
     width: 100%;
     min-height: 110px;
     position: relative;
-   
-    
 }
 
 .Header {
@@ -72,7 +73,8 @@
 
 /* ************************* */
 .Navegation{
-    margin: 50px auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
     max-width: 800px;
 }
 
@@ -97,6 +99,60 @@
 
 .Link01{
     background-color: var(--yellow) !important;
+}
+
+/* ***************************** */
+
+.ContainerCardProduct{
+    max-width: 800px;
+    margin: 0px auto;
+}
+.TitleCategory{
+    padding: 5px 20px;
+}
+
+
+.CardProduct{
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    margin: 5px 15px;
+    gap: 20px;
+}
+
+.ContainerImageProduct{
+    width: 120px;
+    height: auto;
+    position: relative;
+}
+
+.ImageProduct{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.DetailsProduct{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+.DetailsProduct label{
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.DetailsProduct p{
+    font-size: 1rem;
+}
+.DetailsProduct span{
+    color: var(--yellow);
+    font-weight: 600;
 }
 
 

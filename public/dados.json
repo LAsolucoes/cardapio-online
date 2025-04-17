@@ -1,86 +1,124 @@
 [
     {
-        "id": "the-gramercy-tavern-burger-4-pack",
-        "img": "/img/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
-        "name": "Gramercy Tavern",
-        "dsc": "The Gramercy Tavern Burger - 4 Pack",
-        "price": 99
+        "id": 1,
+        "img": "",
+        "name": "Coca-Cola Lata",
+        "description": "Refrigerante gelado para acompanhar sua refeição.",
+        "ingredientes": [
+            "Água gaseificada",
+            "Açúcar",
+            "Corante caramelo",
+            "Cafeína"
+        ],
+        "price": 5.00,
+        "categoria": "bebidas"
     },
     {
-        "id": "shake-shack-shackburger-8-pack",
-        "img": "/img/burguers/shake-shack-shackburger-8-pack.973a5e26836ea86d7e86a327becea2b0.jpg",
-        "name": "Shake Shack",
-        "dsc": "Shake Shack ShackBurger® - 8 Pack",
-        "price": 49
+        "id": 2,
+        "img": "",
+        "name": "Suco Natural de Laranja",
+        "description": "Suco 100% natural, feito com laranjas frescas.",
+        "ingredientes": [
+            "Laranja",
+            "Sem conservantes"
+        ],
+        "price": 7.00,
+        "categoria": "bebidas"
     },
     {
-        "id": "gotts-cheeseburger-kit-for-4",
-        "img": "/img/burguers/gotts-complete-cheeseburger-kit-for-4.7bdc74104b193427b3fe6eae39e05b5e.jpg",
-        "name": "Gott's Roadside",
-        "dsc": "Gott's Complete Cheeseburger Kit for 4",
-        "price": 99
+        "id": 3,
+        "img": "",
+        "name": "Água Mineral",
+        "description": "Água mineral sem gás.",
+        "ingredientes": [
+            "Água mineral"
+        ],
+        "price": 3.00,
+        "categoria": "bebidas"
     },
     {
-        "id": "le-big-matt-kit-for-6",
-        "img": "/img/burguers/le-big-matt-kit-for-6.1ddae6e382bb3218eeb0fd5247de115a.jpg",
-        "name": "Emmy Squared",
-        "dsc": "Le Big Matt Burger Kit for 6",
-        "price": 99
+        "id": 4,
+        "img": "",
+        "name": "Pizza Margherita",
+        "description": "Clássica pizza com molho de tomate, mussarela e manjericão.",
+        "ingredientes": [
+            "Massa",
+            "Molho de tomate",
+            "Mussarela",
+            "Manjericão"
+        ],
+        "price": 35.00,
+        "categoria": "pizza"
     },
     {
-        "id": "shake-shack-shackburger-16-pack",
-        "img": "/img/burguers/shake-shack-shackburger-16-pack.316f8b09144db65931ea29e34869287a.jpg",
-        "name": "Shake Shack",
-        "dsc": "Shake Shack Shackburger® - 16 Pack",
-        "price": 89
+        "id": 5,
+        "img": "",
+        "name": "Pizza Calabresa",
+        "description": "Pizza com calabresa fatiada e cebola.",
+        "ingredientes": [
+            "Massa",
+            "Molho de tomate",
+            "Calabresa",
+            "Cebola",
+            "Mussarela"
+        ],
+        "price": 38.00,
+        "categoria": "pizza"
     },
     {
-        "id": "21-usda-prime-burgers-pack-of-18-8oz-each",
-        "img": "/img/burguers/usda-prime-burgers-pack-of-18-8oz-each.274c67f15aa1c0b210dbf51801706670.jpg",
-        "name": "Peter Luger Steak House",
-        "dsc": "USDA Prime Burgers - Pack of 18 (8oz each)",
-        "price": 175.95
+        "id": 6,
+        "img": "",
+        "name": "Pizza Quatro Queijos",
+        "description": "Uma explosão de sabores com quatro tipos de queijo.",
+        "ingredientes": [
+            "Mussarela",
+            "Parmesão",
+            "Gorgonzola",
+            "Provolone"
+        ],
+        "price": 42.00,
+        "categoria": "pizza"
     },
     {
-        "id": "double-stack-burger-kit-for-4",
-        "img": "/img/burguers/handf-double-stack-burger-kit-for-4.4ee9f54b1d6087e9996335f07c13e5cd.jpg",
-        "name": "Holeman & Finch",
-        "dsc": "Double Stack Burger Kit for 4",
-        "price": 79
+        "id": 7,
+        "img": "",
+        "name": "X-Burguer",
+        "description": "Lanche simples com hambúrguer, queijo e pão.",
+        "ingredientes": [
+            "Pão",
+            "Hambúrguer",
+            "Queijo"
+        ],
+        "price": 12.00,
+        "categoria": "lanches"
     },
     {
-        "id": "goldbelly-burger-bash-pack",
-        "img": "/img/burguers/the-burger-bash-package.bd9d12d031865940bbe5faf15f1a62f8.jpg",
-        "name": "Pat LaFrieda Meats",
-        "dsc": "Goldbelly \"Burger Bash\" Pack",
-        "price": 109
+        "id": 8,
+        "img": "",
+        "name": "X-Salada",
+        "description": "Hambúrguer com queijo, alface, tomate e molho especial.",
+        "ingredientes": [
+            "Pão",
+            "Hambúrguer",
+            "Queijo",
+            "Alface",
+            "Tomate",
+            "Molho especial"
+        ],
+        "price": 15.00,
+        "categoria": "lanches"
     },
     {
-        "id": "burger-au-poivre-kit-4-pack",
-        "img": "/img/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg",
-        "name": "Raoul's",
-        "dsc": "Burger Au Poivre Kit - 4 Pack",
-        "price": 99
-    },
-    {
-        "id": "goldbelly-burger-blend-4-lbs",
-        "img": "/img/burguers/goldbelly-burger-blend-1-lb.13a21b66edf7173a59c75c3a6d2f981b.jpg",
-        "name": "Flannery Beef",
-        "dsc": "Goldbelly Burger Blend - 4 lbs.",
-        "price": 79
-    },
-    {
-        "id": "gotts-complete-cheeseburger-kit-for-8",
-        "img": "/img/burguers/gotts-complete-cheeseburger-kit-for-8.092aa049d00286fa1733d720decc782e.jpg",
-        "name": "Gott's Roadside",
-        "dsc": "Gott's Complete Cheeseburger Kit for 8",
-        "price": 149
-    },
-    {
-        "id": "gramercy-tavern-burger-kielbasa-combo",
-        "img": "/img/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-47.jpg",
-        "name": "Gramercy Tavern",
-        "dsc": "Gramercy Tavern Burger + Kielbasa Combo",
-        "price": 149
+        "id": 9,
+        "img": "",
+        "name": "Misto Quente",
+        "description": "Clássico lanche com presunto e queijo no pão francês.",
+        "ingredientes": [
+            "Pão",
+            "Presunto",
+            "Queijo"
+        ],
+        "price": 8.00,
+        "categoria": "lanches"
     }
 ]
