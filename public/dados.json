@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "img": "",
-        "name": "Coca-Cola Lata",
+        "img": "/img/coca-cola350ml.png",
+        "name": "Coca-Cola Lata 350ml",
         "description": "Refrigerante gelado para acompanhar sua refeição.",
         "ingredientes": [
             "Água gaseificada",
@@ -15,8 +15,8 @@
     },
     {
         "id": 2,
-        "img": "",
-        "name": "Suco Natural de Laranja",
+        "img": "/img/suco-natual-laranja-one2L.png",
+        "name": "Suco Natural de Laranja One 2L",
         "description": "Suco 100% natural, feito com laranjas frescas.",
         "ingredientes": [
             "Laranja",
@@ -27,7 +27,7 @@
     },
     {
         "id": 3,
-        "img": "",
+        "img": "/img/agua-mineral500ml.png",
         "name": "Água Mineral",
         "description": "Água mineral sem gás.",
         "ingredientes": [
@@ -38,7 +38,22 @@
     },
     {
         "id": 4,
-        "img": "",
+        "img": "/img/fanta-laranja350ml.png",
+        "name": "",
+        "description": "Refrigerante bem gelado de laranja.",
+        "ingredientes": [
+            "Massa",
+            "Molho de tomate",
+            "Calabresa",
+            "Cebola",
+            "Mussarela"
+        ],
+        "price": 38.00,
+        "categoria": "pizza"
+    },
+    {
+        "id": 5,
+        "img": "/img/pizza-marguelita.png",
         "name": "Pizza Margherita",
         "description": "Clássica pizza com molho de tomate, mussarela e manjericão.",
         "ingredientes": [
@@ -51,23 +66,8 @@
         "categoria": "pizza"
     },
     {
-        "id": 5,
-        "img": "",
-        "name": "Pizza Calabresa",
-        "description": "Pizza com calabresa fatiada e cebola.",
-        "ingredientes": [
-            "Massa",
-            "Molho de tomate",
-            "Calabresa",
-            "Cebola",
-            "Mussarela"
-        ],
-        "price": 38.00,
-        "categoria": "pizza"
-    },
-    {
         "id": 6,
-        "img": "",
+        "img": "/img/pizza-quatro-queijo.png",
         "name": "Pizza Quatro Queijos",
         "description": "Uma explosão de sabores com quatro tipos de queijo.",
         "ingredientes": [
@@ -81,7 +81,7 @@
     },
     {
         "id": 7,
-        "img": "",
+        "img": "/img/x-burguer.png",
         "name": "X-Burguer",
         "description": "Lanche simples com hambúrguer, queijo e pão.",
         "ingredientes": [
@@ -94,7 +94,7 @@
     },
     {
         "id": 8,
-        "img": "",
+        "img": "/img/x-salada.png",
         "name": "X-Salada",
         "description": "Hambúrguer com queijo, alface, tomate e molho especial.",
         "ingredientes": [
@@ -110,9 +110,9 @@
     },
     {
         "id": 9,
-        "img": "",
-        "name": "Misto Quente",
-        "description": "Clássico lanche com presunto e queijo no pão francês.",
+        "img": "/img/x-bacon.png",
+        "name": "X-Bacon",
+        "description": "Clássico lanche com muito Bacon.",
         "ingredientes": [
             "Pão",
             "Presunto",

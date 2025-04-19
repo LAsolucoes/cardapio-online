@@ -1,14 +1,15 @@
 .Main {
     width: 100%;
     height: 100vh;
-    background-color:  var(--color-background)
+    background-color: var(--color-background)
 }
 
-.Container{
+.Container {
     margin: 0px auto;
     max-width: 800px;
 }
-.CardBackground{
+
+.CardBackground {
     background-color: var(--yellow-secondary);
     width: 100%;
     min-height: 110px;
@@ -17,7 +18,7 @@
 
 .Header {
     position: absolute;
-    top:18px;
+    top: 18px;
     left: 8px;
     right: 8px;
     display: flex;
@@ -30,31 +31,33 @@
     box-shadow: var(--box-shadow);
 }
 
-.CardCompany{
+.CardCompany {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     gap: 10px;
 }
-.Infos{
+
+.Infos {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.Infos h1{
+.Infos h1 {
     font-size: 1.2rem;
     color: var(--dark);
 }
 
-.SeeMore{
-  
+.SeeMore {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.SeeMore label{
+
+.SeeMore label {
     color: var(--green);
     display: flex;
     align-items: center;
@@ -63,30 +66,30 @@
     font-weight: 500;
 }
 
-.SeeMore a{
- font-size: 0.8rem ;
- color: var(--yellow);
- font-weight: 600;
- margin-right: 20px;
+.SeeMore a {
+    font-size: 0.8rem;
+    color: var(--yellow);
+    font-weight: 600;
+    margin-right: 20px;
 }
 
 
 /* ************************* */
-.Navegation{
+.Navegation {
     margin-top: 50px;
     margin-bottom: 20px;
     max-width: 800px;
 }
 
-.Category{
+.Category {
     display: flex;
     align-items: center;
     gap: 15px;
     overflow: auto;
-    padding:20px 10px;
+    padding: 20px 10px;
 }
 
-.Category a{
+.Category a {
     background-color: var(--white);
     padding: 8px 10px;
     font-size: 1rem;
@@ -97,64 +100,57 @@
     white-space: nowrap;
 }
 
-.Link01{
+.Link01 {
     background-color: var(--yellow) !important;
 }
 
 /* ***************************** */
 
-.ContainerCardProduct{
+.ContainerCardProduct {
     max-width: 800px;
     margin: 0px auto;
 }
-.TitleCategory{
+
+.TitleCategory {
     padding: 5px 20px;
 }
 
 
-.CardProduct{
+.CardProduct {
     background-color: var(--white);
     border-radius: 15px;
     display: flex;
     box-shadow: var(--box-shadow);
-    padding: 10px;
+    padding: 5px;
     margin: 5px 15px;
-    gap: 20px;
+    gap: 10px;
 }
 
-.ContainerImageProduct{
-    width: 120px;
-    height: auto;
-    position: relative;
-}
 
-.ImageProduct{
-    object-fit: cover;
+
+.ImageProduct {
     border-radius: 10px;
 }
 
-.DetailsProduct{
+.DetailsProduct {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 
 
 
-.DetailsProduct label{
+.DetailsProduct label {
     font-weight: 600;
     color: var(--dark);
 }
 
-.DetailsProduct p{
-    font-size: 1rem;
+.DetailsProduct p {
+    font-size: 0.8rem;
+    
 }
-.DetailsProduct span{
+
+.DetailsProduct span {
     color: var(--yellow);
     font-weight: 600;
 }
-
-
-
-

@@ -5,7 +5,6 @@ import Link from "next/link";
 import { initScrollReveal } from "@/app/helpers/scrollReavealConfig";
 import { FaClock } from "react-icons/fa6";
 import ImageLogo from "../../../../public/assets/logo.png";
-import ImageProduct from "../../../../public/img/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg"
 import styles from "./cardapio.module.css";
 
 export default function Cardapio() {
@@ -61,8 +60,8 @@ export default function Cardapio() {
               <Image
                 src={ImageLogo}
                 alt=""
-                width={80}
-                height={80}
+                width={90}
+                height={90}
                 priority={true}
                 quality={100}
               />
@@ -102,10 +101,11 @@ export default function Cardapio() {
             <div className={`  ${styles.CardProduct}`} key={item.id} >
               <div className={styles.ContainerImageProduct}>
                 <Image
-                  src={ImageProduct}
-                  alt=""
-                  width={120}
-                  height={120}
+                  src={item.img}
+                  alt={item.name}
+                  title={item.name}
+                  width={80}
+                  height={80}
                   priority={true}
                   quality={100}
                   className={styles.ImageProduct}
