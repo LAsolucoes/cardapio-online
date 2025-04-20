@@ -11,7 +11,9 @@
             "Cafeína"
         ],
         "price": 5.00,
-        "category": "bebidas"
+        "category": "Bebidas"
+
+       
     },
     {
         "id": 2,
@@ -23,7 +25,9 @@
             "Sem conservantes"
         ],
         "price": 7.00,
-        "category": "bebidas"
+        "category":"Bebidas"
+
+       
     },
     {
         "id": 3,
@@ -34,7 +38,9 @@
             "Água mineral"
         ],
         "price": 3.00,
-        "category": "bebidas"
+        "category": "Bebidas"
+
+        
     },
     {
         "id": 4,
@@ -42,14 +48,13 @@
         "name": "Fanta laranja 350ml",
         "description": "Refrigerante bem gelado de laranja.",
         "ingredients": [
-            "Massa",
-            "Molho de tomate",
-            "Calabresa",
-            "Cebola",
-            "Mussarela"
+            "Água gaseificada",
+            "Açúcar"
         ],
         "price": 38.00,
-        "category": "pizza"
+        "category": "Bebidas"
+
+        
     },
     {
         "id": 5,
@@ -63,7 +68,8 @@
             "Manjericão"
         ],
         "price": 35.00,
-        "category": "pizza"
+        "category": "Pizza"
+        
     },
     {
         "id": 6,
@@ -77,7 +83,9 @@
             "Provolone"
         ],
         "price": 42.00,
-        "category": "pizza"
+        "category": "Pizza"
+
+        
     },
     {
         "id": 7,
@@ -90,7 +98,9 @@
             "Queijo"
         ],
         "price": 12.00,
-        "category": "lanches"
+        "category":"Lanches"
+
+      
     },
     {
         "id": 8,
@@ -106,7 +116,9 @@
             "Molho especial"
         ],
         "price": 15.00,
-        "category": "lanches"
+        "category":"Lanches"
+
+        
     },
     {
         "id": 9,
@@ -119,6 +131,8 @@
             "Queijo"
         ],
         "price": 8.00,
-        "category": "lanches"
+        "category":  "Lanches"
+
+    
     }
 ]

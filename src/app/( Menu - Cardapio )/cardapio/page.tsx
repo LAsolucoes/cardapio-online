@@ -5,24 +5,26 @@ import Link from "next/link";
 import { initScrollReveal } from "@/app/helpers/scrollReavealConfig";
 import { FaClock } from "react-icons/fa6";
 import ImageLogo from "../../../../public/assets/logo.png";
-import styles from "../../( Menu - Cardapio )/cardapio.module.css"
+import styles from "../../( Menu - Cardapio )/cardapio.module.css";
 
+interface ListProductsProps {
+  id: number;
+  img: string;
+  name: string;
+  description: string;
+  ingredients: string[];
+  price: number;
+  category: string;
+}
 export default function Cardapio() {
   const [listItens, setListaItens] = useState<ListProductsProps[]>([]);
+  const [allItens, setAllItens] = useState<ListProductsProps[]>([]);
+
 
   useEffect(() => {
     initScrollReveal();
   }, []);
 
-  interface ListProductsProps {
-    id: number;
-    img: string;
-    name: string;
-    description: string;
-    ingredients: string[];
-    price: number;
-    category: number;
-  }
 
   useEffect(() => {
     async function listProducts() {
@@ -30,7 +32,12 @@ export default function Cardapio() {
         const res = await fetch("/dados.json");
         const data = await res.json();
         setListaItens(data);
+        setAllItens(data);
 
+
+
+  
+       
       } catch {
         alert("error ao se conectar com banco de dados");
       }
@@ -39,14 +46,17 @@ export default function Cardapio() {
     listProducts();
   }, []);
 
+  async function listProductsCartegory(category: string) {
+    const categorySelected = allItens.filter((item) => item.category === category);
+    setListaItens(categorySelected);
+    console.log(categorySelected);
+  }
+
   return (
     <main className={`${styles.Main}`}>
       <div className={styles.CardBackground}></div>
       <div className={`${styles.Container}`}>
-
-
         <header className={`reveal ${styles.Header}`}>
-
           <div className={styles.CardCompany}>
             <div className={styles.ImageLogo}>
               <Image
@@ -70,27 +80,28 @@ export default function Cardapio() {
             </div>
           </div>
         </header>
+
         <nav className={` reveal ${styles.Navegation}`}>
           <div className={styles.Category}>
-            <Link href={""} className={styles.Link01}>
-              Pizzas Tradicionais
+            <Link href={""} onClick={() => setAllItens(listItens)}>
+              Todos
             </Link>
-            <Link href={""}>Burgers</Link>
-            <Link href={""}>Bebidas</Link>
-            <Link href={""}>Drinks</Link>
-            <Link href={""}>Pizzas </Link>
-            <Link href={""}>Burgers</Link>
-            <Link href={""}>Bebidas</Link>
-            <Link href={""}>Drinks</Link>
+
+             <Link href={""} onClick={()=> listProductsCartegory("Bebidas")}>Bebidas</Link>
+            <Link href={""} onClick={()=> listProductsCartegory("Pizza")}>Pizzas </Link>
+            <Link href={""} onClick={()=> listProductsCartegory("Lanches")}>Lanches</Link> 
           </div>
         </nav>
-        <div className={`reveal ${styles.ContainerContentProduct}`}>
+        <div className={`reveal `}>
           <div className={styles.TitleCategory}>
             <label>Categorias</label>
           </div>
-
           {listItens.map((item) => (
-            <Link href={`/detalhes-produto/${item.id}`}  className={`  ${styles.CardProduct}`} key={item.id}>
+            <Link
+              href={`/detalhes-produto/${item.id}`}
+              className={`  ${styles.CardProduct}`}
+              key={item.id}
+            >
               <div>
                 <Image
                   src={item.img}
@@ -109,13 +120,15 @@ export default function Cardapio() {
                   <p>{item.description}</p>
                 </div>
                 <div>
-                  <span>{item.price.toLocaleString("pt-BR" , {
-                    style:"currency",
-                    currency: "BRL"
-                  })}</span>
+                  <span>
+                    {item.price.toLocaleString("pt-BR", {
+                      style: "currency",
+                      currency: "BRL",
+                    })}
+                  </span>
                 </div>
               </div>
-            </Link >
+            </Link>
           ))}
         </div>
       </div>

@@ -1,0 +1,22 @@
+[
+    {
+    "id": 1 ,
+    "img": "/assets/logo.png",
+    "name": "Menu On-line",
+    "slogan": "Sistema desenvolvido por LA SOLUÇõES &copy;. Todos os direitos reservados ",
+    "whatsApp" : "(11) 93805-2897",
+    "phone": "(11) 2056-2541",
+    "anddres": "Rua Maria Laura Figueiredo N° 54 , Jardim novo carrão - São Paulo",
+    "operation": [ 
+        "Segunda : 14:00 as 23:00",
+        "Terça : 14:00 as 23:00",
+        "Quarta : 14:00 as 23:00",
+        "Quinta : 14:00 as 23:00",
+        "Sexta : 14:00 as 23:00",
+        "Sabado : 18:00 as 23:00",
+        "Domingo : 18:00 as 23:00",
+        "Feriados : 12:00 as 23:00"
+],
+ "payment" : [ "Pix" , "Dinheiro" , "Cartão de Crédito" , "Cartão de Débito"]
+}
+]

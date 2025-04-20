@@ -104,9 +104,6 @@
 
 /* *********** End Header **************** */
 
-.ContainerContentProduct {
-    margin: 0px 10px;
-}
 
 .TitleCategory {
     padding: 5px 20px;
@@ -195,6 +192,12 @@
 }
 
 /*********  Container Image  **************/
+
+.ContainerContentProduct {
+    margin: 0px 10px;
+    
+}
+
 
 .ContainerImageProductSelected {
     background-color: var(--white);
@@ -324,6 +327,10 @@
     color: var(--dark);
 }
 
+.ContainerObservation{
+    padding-bottom: 100px;
+}
+
 .TextArea {
     border: none;
     font-size: 16px;
@@ -333,7 +340,7 @@
     outline: none;
 }
 
-/* ******************************** */
+
 
 .Footer {
     display: flex;
@@ -461,3 +468,8 @@
     font-weight: 400;
 }
 
+.Payment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

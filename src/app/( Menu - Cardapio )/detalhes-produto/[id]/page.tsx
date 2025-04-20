@@ -91,10 +91,12 @@ export default function DetalhesProduto() {
                   <p>{listProduct.description}</p>
                 </div>
 
-                <span>{listProduct.price.toLocaleString("pt-BR", {
-                  style: "currency",
-                  currency: "BRL"
-                })}</span>
+                <span>
+                  {listProduct.price.toLocaleString("pt-BR", {
+                    style: "currency",
+                    currency: "BRL",
+                  })}
+                </span>
               </div>
 
               {listProduct.ingredients && (
@@ -156,14 +158,15 @@ export default function DetalhesProduto() {
                 </div>
               </div>
             </div>
-
-            <div className={styles.AdditionalTitle}>
-              <h3>Observações</h3>
-              <label>Informe alguma observação abaixa</label>
-            </div>
-            <div className={styles.CardAdditional}>
-              <div className={`${styles.Observation} ${styles.Card}`}>
-                <textarea className={styles.TextArea}></textarea>
+            <div className={styles.ContainerObservation}>
+              <div className={styles.AdditionalTitle}>
+                <h3>Observações</h3>
+                <label>Informe alguma observação abaixa</label>
+              </div>
+              <div className={styles.CardAdditional}>
+                <div className={`${styles.Observation} ${styles.Card}`}>
+                  <textarea className={styles.TextArea}></textarea>
+                </div>
               </div>
             </div>
           </div>
