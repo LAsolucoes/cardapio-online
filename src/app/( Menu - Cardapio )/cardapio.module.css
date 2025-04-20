@@ -1,0 +1,463 @@
+.Main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-background);
+}
+
+.CardBackground {
+    background-color: var(--yellow-secondary);
+    width: 100%;
+    min-height: 110px;
+    position: relative;
+}
+
+.Container {
+    margin: 0px auto;
+    max-width: 800px;
+}
+
+.Header {
+    position: absolute;
+    top: 18px;
+    left: 8px;
+    right: 8px;
+    display: flex;
+    margin: 30px auto;
+    background-color: var(--white);
+    max-width: 800px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.CardCompany {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.Infos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Infos h1 {
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+.SeeMore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SeeMore label {
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.SeeMore a {
+    font-size: 0.8rem;
+    color: var(--yellow);
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.Navegation {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.Category {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow: auto;
+    padding: 20px 10px;
+}
+
+.Category a {
+    background-color: var(--white);
+    padding: 8px 10px;
+    font-size: 1rem;
+    color: var(--black);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.Link01 {
+    background-color: var(--yellow) !important;
+    /* remove e corrigir */
+}
+
+/* *********** End Header **************** */
+
+.ContainerContentProduct {
+    margin: 0px 10px;
+}
+
+.TitleCategory {
+    padding: 5px 20px;
+}
+
+
+.CardProduct {
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    padding: 5px;
+    margin: 10px 15px;
+    gap: 10px;
+}
+
+
+
+.ImageProduct {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.DetailsProduct {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+
+}
+
+.DetailsProduct .NameDescription {
+    flex-grow: 1;
+}
+
+.DetailsProduct label {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.9rem;
+}
+
+.DetailsProduct p {
+    font-size: 0.8rem;
+
+}
+
+.DetailsProduct span {
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+/*********  WARNING  **************/
+/* Header page details product selected */
+
+/* ************ Header **************** */
+.CardTitleHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6px;
+}
+
+.LinkReturnMenu a {
+    color: var(--dark);
+    display: flex;
+    margin-left: 5px;
+}
+
+.TextTitle {
+    flex: 1;
+}
+
+.TextTitle h1 {
+    font-size: 1.2rem;
+    color: var(--dark);
+    text-align: center;
+}
+
+/*********  Container Image  **************/
+
+.ContainerImageProductSelected {
+    background-color: var(--white);
+    position: relative;
+    max-width: 800px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    margin: 0px auto;
+    box-shadow: 3px 4px 4px 0px rgba(128, 128, 128, 0.342);
+    border-radius: 10px;
+
+}
+
+.ImageProductSelected {
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+
+.DescriptionProduct {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    margin: 15px auto;
+    box-shadow: 0px 5px 4px 0px rgba(128, 128, 128, 0.342);
+
+}
+
+.DescriptionProduct h2 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.DescriptionProduct p {
+    font-size: 0.8rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.DescriptionProduct span {
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.DescriptionProduct h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.DescriptionProduct li {
+    list-style: none;
+    font-size: 0.9rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+
+
+/* ************************ */
+
+.Additional {
+    margin-top: 25px;
+}
+
+.AdditionalTitle {
+    margin: 0px 10px;
+}
+
+.AdditionalTitle h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 25px;
+
+}
+
+.AdditionalTitle label {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.CardAdditional {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 4px 0px rgba(128, 128, 128, 0.342);
+    gap: 10px;
+}
+
+.OptionAdditional {
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.OptionAdditional label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+
+.OptionAdditionalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.OptionAdditionalPrice label {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.TextArea {
+    border: none;
+    font-size: 16px;
+    color: var(--dark);
+    min-width: 100%;
+    min-height: 100px;
+    outline: none;
+}
+
+/* ******************************** */
+
+.Footer {
+    display: flex;
+    margin: 10px auto;
+}
+
+
+
+.ContentFooter {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    max-width: 1024px;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #FFF2CC;
+    border: 1px solid #FFBF00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ContainerButtonFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ContainerButtonFooter button {
+    background-color: #ffbf008c;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ButtonAddFooter button {
+    background-color: #FFBF00;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+
+
+
+/*********  WARNING  **************/
+/*  Page see company  */
+
+/* ************ Header **************** */
+.ContainerContentSeeMore {
+    margin: 0px 10px;
+}
+
+
+.CardSeeMore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px;
+    background-color: var(--white);
+    margin: 10px auto;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.AboutCompany {
+    margin-top: 50px;
+}
+
+.AboutCompanyDetails {
+    max-width: 70%;
+}
+
+.AboutCompany h1 {
+    font-size: 1.1rem;
+    color: var(--dark);
+}
+
+.AboutCompany p {
+    font-size: 0.8rem;
+}
+
+
+
+
+.ImageLogoSeeMore {
+    border: 1px solid rgba(128, 128, 128, 0.064);
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin-right: 5px;
+    position: absolute;
+    top: -40%;
+    right: 10px;
+}
+
+.ContainerCompanyDetails {
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.TitleCardInfo {
+    margin-bottom: 30px;
+}
+
+.TitleCardInfo h3 {
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 600;
+    margin: 0px 5px;
+
+}
+
+.TitleCardInfo label {
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+

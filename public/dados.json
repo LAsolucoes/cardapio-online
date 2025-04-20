@@ -4,44 +4,44 @@
         "img": "/img/coca-cola350ml.png",
         "name": "Coca-Cola Lata 350ml",
         "description": "Refrigerante gelado para acompanhar sua refeição.",
-        "ingredientes": [
+        "ingredients": [
             "Água gaseificada",
             "Açúcar",
             "Corante caramelo",
             "Cafeína"
         ],
         "price": 5.00,
-        "categoria": "bebidas"
+        "category": "bebidas"
     },
     {
         "id": 2,
-        "img": "/img/suco-natual-laranja-one2L.png",
+        "img": "/img/suco-natural-laranja-one2L.png",
         "name": "Suco Natural de Laranja One 2L",
         "description": "Suco 100% natural, feito com laranjas frescas.",
-        "ingredientes": [
+        "ingredients": [
             "Laranja",
             "Sem conservantes"
         ],
         "price": 7.00,
-        "categoria": "bebidas"
+        "category": "bebidas"
     },
     {
         "id": 3,
         "img": "/img/agua-mineral500ml.png",
         "name": "Água Mineral",
         "description": "Água mineral sem gás.",
-        "ingredientes": [
+        "ingredients": [
             "Água mineral"
         ],
         "price": 3.00,
-        "categoria": "bebidas"
+        "category": "bebidas"
     },
     {
         "id": 4,
         "img": "/img/fanta-laranja350ml.png",
-        "name": "",
+        "name": "Fanta laranja 350ml",
         "description": "Refrigerante bem gelado de laranja.",
-        "ingredientes": [
+        "ingredients": [
             "Massa",
             "Molho de tomate",
             "Calabresa",
@@ -49,55 +49,55 @@
             "Mussarela"
         ],
         "price": 38.00,
-        "categoria": "pizza"
+        "category": "pizza"
     },
     {
         "id": 5,
         "img": "/img/pizza-marguelita.png",
         "name": "Pizza Margherita",
         "description": "Clássica pizza com molho de tomate, mussarela e manjericão.",
-        "ingredientes": [
+        "ingredients": [
             "Massa",
             "Molho de tomate",
             "Mussarela",
             "Manjericão"
         ],
         "price": 35.00,
-        "categoria": "pizza"
+        "category": "pizza"
     },
     {
         "id": 6,
         "img": "/img/pizza-quatro-queijo.png",
         "name": "Pizza Quatro Queijos",
         "description": "Uma explosão de sabores com quatro tipos de queijo.",
-        "ingredientes": [
+        "ingredients": [
             "Mussarela",
             "Parmesão",
             "Gorgonzola",
             "Provolone"
         ],
         "price": 42.00,
-        "categoria": "pizza"
+        "category": "pizza"
     },
     {
         "id": 7,
         "img": "/img/x-burguer.png",
         "name": "X-Burguer",
         "description": "Lanche simples com hambúrguer, queijo e pão.",
-        "ingredientes": [
+        "ingredients": [
             "Pão",
             "Hambúrguer",
             "Queijo"
         ],
         "price": 12.00,
-        "categoria": "lanches"
+        "category": "lanches"
     },
     {
         "id": 8,
         "img": "/img/x-salada.png",
         "name": "X-Salada",
         "description": "Hambúrguer com queijo, alface, tomate e molho especial.",
-        "ingredientes": [
+        "ingredients": [
             "Pão",
             "Hambúrguer",
             "Queijo",
@@ -106,19 +106,19 @@
             "Molho especial"
         ],
         "price": 15.00,
-        "categoria": "lanches"
+        "category": "lanches"
     },
     {
         "id": 9,
         "img": "/img/x-bacon.png",
         "name": "X-Bacon",
         "description": "Clássico lanche com muito Bacon.",
-        "ingredientes": [
+        "ingredients": [
             "Pão",
             "Presunto",
             "Queijo"
         ],
         "price": 8.00,
-        "categoria": "lanches"
+        "category": "lanches"
     }
 ]
