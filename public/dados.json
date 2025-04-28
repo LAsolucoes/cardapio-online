@@ -11,7 +11,11 @@
             "Cafeína"
         ],
         "price": 5.00,
-        "category": "Bebidas"
+        "category": "Bebidas",
+        "additional": [
+      { "name": "Gelo extra", "price": 0.5 },
+      { "name": "Limão", "price": 0.5 }
+    ]
 
        
     },
@@ -25,7 +29,12 @@
             "Sem conservantes"
         ],
         "price": 7.00,
-        "category":"Bebidas"
+        "category":"Bebidas",
+        "additional": [
+      { "name": "Gelo extra", "price": 0.5 },
+      { "name": "Limão", "price": 0.5 }
+    ]
+
 
        
     },
@@ -38,7 +47,11 @@
             "Água mineral"
         ],
         "price": 3.00,
-        "category": "Bebidas"
+        "category": "Bebidas",
+        "additional": [
+      { "name": "Gelo extra", "price": 0.5 },
+      { "name": "Limão", "price": 0.5 }
+    ]
 
         
     },
@@ -52,56 +65,68 @@
             "Açúcar"
         ],
         "price": 38.00,
-        "category": "Bebidas"
+        "category": "Bebidas",
+        "additional": [
+      { "name": "Gelo extra", "price": 0.5 },
+      { "name": "Limão", "price": 0.5 }
+    ]
 
         
     },
-    {
-        "id": 5,
-        "img": "/img/pizza-marguelita.png",
-        "name": "Pizza Margherita",
-        "description": "Clássica pizza com molho de tomate, mussarela e manjericão.",
-        "ingredients": [
-            "Massa",
-            "Molho de tomate",
-            "Mussarela",
-            "Manjericão"
-        ],
-        "price": 35.00,
-        "category": "Pizza"
-        
-    },
-    {
-        "id": 6,
-        "img": "/img/pizza-quatro-queijo.png",
-        "name": "Pizza Quatro Queijos",
-        "description": "Uma explosão de sabores com quatro tipos de queijo.",
-        "ingredients": [
-            "Mussarela",
-            "Parmesão",
-            "Gorgonzola",
-            "Provolone"
-        ],
-        "price": 42.00,
-        "category": "Pizza"
-
-        
-    },
-    {
-        "id": 7,
-        "img": "/img/x-burguer.png",
-        "name": "X-Burguer",
-        "description": "Lanche simples com hambúrguer, queijo e pão.",
-        "ingredients": [
-            "Pão",
-            "Hambúrguer",
-            "Queijo"
-        ],
-        "price": 12.00,
-        "category":"Lanches"
-
-      
-    },
+    
+        {
+          "id": 5,
+          "img": "/img/pizza-marguelita.png",
+          "name": "Pizza Margherita",
+          "description": "Clássica pizza com molho de tomate, mussarela e manjericão.",
+          "ingredients": ["Massa", "Molho de tomate", "Mussarela", "Manjericão"],
+          "price": 35.0,
+          "category": "Pizza",
+          "edges": [
+            { "name": "Catupiry", "price": 8.99 },
+            { "name": "Cheddar", "price": 5.99 },
+            { "name": "Chocolate", "price": 9.99 }
+          ],
+          "additional": [
+            { "name": "Azeitona", "price": 2.5 },
+            { "name": "Cebola roxa", "price": 2.0 },
+            { "name": "Tomate seco", "price": 3.0 }
+          ]
+        },
+        {
+          "id": 6,
+          "img": "/img/pizza-quatro-queijo.png",
+          "name": "Pizza Quatro Queijos",
+          "description": "Uma explosão de sabores com quatro tipos de queijo.",
+          "ingredients": ["Mussarela", "Parmesão", "Gorgonzola", "Provolone"],
+          "price": 42.0,
+          "category": "Pizza",
+          "edges": [
+            { "name": "Catupiry", "price": 8.99 },
+            { "name": "Cheddar", "price": 8.99 },
+            { "name": "Chocolate", "price": 9.99 }
+          ],
+          "additional": [
+            { "name": "Orégano extra", "price": 1.5 },
+            { "name": "Molho pesto", "price": 3.5 },
+            { "name": "Alho frito", "price": 2.0 }
+          ]
+        },
+        {
+          "id": 7,
+          "img": "/img/x-burguer.png",
+          "name": "X-Burguer",
+          "description": "Lanche simples com hambúrguer, queijo e pão.",
+          "ingredients": ["Pão", "Hambúrguer", "Queijo"],
+          "price": 12.0,
+          "category": "Lanches",
+          "additional": [
+            { "name": "Bacon", "price": 3.0 },
+            { "name": "Maionese da casa", "price": 2.0 },
+            { "name": "Picles", "price": 1.5 }
+          ]
+        }
+      ,
     {
         "id": 8,
         "img": "/img/x-salada.png",
@@ -116,7 +141,11 @@
             "Molho especial"
         ],
         "price": 15.00,
-        "category":"Lanches"
+        "category":"Lanches",
+        "additional": [
+            { "name": "Bacon extra", "price": 3.5 },
+            { "name": "Cebola caramelizada", "price": 2.0 }
+          ]
 
         
     },
@@ -131,7 +160,11 @@
             "Queijo"
         ],
         "price": 8.00,
-        "category":  "Lanches"
+        "category":  "Lanches",
+        "additional": [
+            { "name": "Bacon extra", "price": 3.5 },
+            { "name": "Cebola caramelizada", "price": 2.0 }
+          ]
 
     
     }
