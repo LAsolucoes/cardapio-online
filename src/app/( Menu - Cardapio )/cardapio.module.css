@@ -355,7 +355,7 @@
     left: 0;
     right: 0;
     width: calc(100% - 20px);
-    max-width: 1024px;
+    max-width: 780px;
     margin: 0px auto;
     padding: 10px;
     border-radius: 12px;
