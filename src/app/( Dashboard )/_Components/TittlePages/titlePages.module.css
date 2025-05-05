@@ -1,0 +1,15 @@
+.ContainerTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.Title{
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+.Warning{
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}

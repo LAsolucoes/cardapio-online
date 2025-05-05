@@ -1,5 +1,4 @@
 .Sidebar {
-    border: 1px solid red;
     background-color: var(--yellow-secondary);
     position: fixed;
     left: 0;
@@ -12,7 +11,6 @@
 .Navegation {
     margin: 10px;
     overflow: auto;
-    font-size: 0.8rem;
     line-height: 1.7;
 }
 
@@ -37,6 +35,8 @@
 }
 
 .Navegation a{
-    color: var(--dark);
+    color: var(--gray);
     transition: 0.6s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
 }

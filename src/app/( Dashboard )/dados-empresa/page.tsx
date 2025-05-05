@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { TitlePage } from "../_Components/TittlePages";
+import { ButtonLinkSaveCancel } from "../_Components/ButtonSaveCancel"
 
 export default function DadosCompany() {
   const [isTypeCnpj, setIsTypeCnpj] = useState(true);
@@ -24,44 +26,44 @@ export default function DadosCompany() {
   return (
     <div>
       <div>
-        <h1>Pagina dados da Empresa</h1>
+         <TitlePage  title={"Cadastro da Empresa"} />
       </div>
 
       
 
       <div className="fieldGroup">
         <div className="fieldInput">
-          <label>Tipo</label>
+          <label className="required">Tipo</label>
           <select name="" id="" onChange={TypeCompany}>
-            <option value="">CNPJ</option>
+            <option value="" >CNPJ</option>
             <option value="">CPF</option>
           </select>
         </div>
         <div className="fieldInput">
-          <label>{typeCompany}</label>
+          <label className="required">{typeCompany}</label>
           <input type="text" />
         </div>
         <div className="fieldInput">
-          <label>{nameRazaoSocial}</label>
+          <label className="required">{nameRazaoSocial}</label>
           <input type="text" className="input-lg" />
         </div>
         <div className="fieldInput">
-          <label>Nome Fantasia</label>
+          <label className="required">Nome Fantasia</label>
           <input type="text" className="input-lg" />
         </div>
       </div>
 
       <div className="fieldGroup">
         <div className="fieldInput">
-          <label>CEP</label>
+          <label className="required">CEP</label>
           <input type="text" />
         </div>
         <div className="fieldInput">
-          <label>Endereço</label>
+          <label className="required">Endereço</label>
           <input type="text" className="input-lg" />
         </div>
         <div className="fieldInput">
-          <label>N°</label>
+          <label className="required">N°</label>
           <input type="text" className="input-sm" />
         </div>
         <div className="fieldInput">
@@ -69,7 +71,7 @@ export default function DadosCompany() {
           <input type="text" className="input-md" />
         </div>
         <div className="fieldInput">
-          <label>Estado</label>
+          <label className="required">Estado</label>
           <select name="" id="">
             <option value=""> - - </option>
             <option value="">Rio Grande do Sul</option>
@@ -93,7 +95,7 @@ export default function DadosCompany() {
       </div>
       <hr />
       <div>
-        <label>Redes Sociais</label>
+        <label className="subTitle">Redes Sociais</label>
       </div>
       <div className="fieldGroup">
         <div className="fieldInput">
@@ -112,12 +114,12 @@ export default function DadosCompany() {
       <hr />
 
       <div>
-        <label>Dados de entrega</label>
+        <label className="subTitle">Dados de entrega</label>
       </div>
 
       <div className="fieldGroup">
         <div className="fieldInput">
-          <label>Valor de pedido mínimo</label>
+          <label className="required">Valor de pedido mínimo</label>
           <input type="text" />
         </div>
         <div className="fieldInput">
@@ -136,6 +138,11 @@ export default function DadosCompany() {
           </select>
         </div>
       </div>
+
+      <ButtonLinkSaveCancel 
+      name="Salvar"
+      
+      />
     </div>
   );
 }
