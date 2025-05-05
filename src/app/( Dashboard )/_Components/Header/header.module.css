@@ -1,0 +1,22 @@
+.Header{
+    background-color: var(--yellow-secondary);
+    width: 100%;
+    height: auto;
+}
+
+.HeaderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ContainerLogo{
+    margin-left: 30px;
+}
+
+.Navegation{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    gap: 10px;
+}

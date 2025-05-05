@@ -1,0 +1,42 @@
+.Sidebar {
+    border: 1px solid red;
+    background-color: var(--yellow-secondary);
+    position: fixed;
+    left: 0;
+    top: auto;
+    width: 200px;
+    max-width: 250px;
+    height: 100%;
+}
+
+.Navegation {
+    margin: 10px;
+    overflow: auto;
+    font-size: 0.8rem;
+    line-height: 1.7;
+}
+
+.Navegation ul {
+    list-style: none;
+}
+
+.Navegation li{
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.6s ease 
+
+}
+.Navegation li:hover{
+    background-color: var(--yellow);
+    border-radius: 8px;
+  
+}
+
+.Navegation li:hover a{
+    color: var(--black);
+}
+
+.Navegation a{
+    color: var(--dark);
+    transition: 0.6s ease;
+}

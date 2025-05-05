@@ -10,6 +10,7 @@
     --yellow: #FFBF00;
     --black: #000;
     --gray: gray;
+    --borderInput : rgba(128, 128, 128, 0.396);
     --dark: rgba(0, 0, 0, 0.749);
     --green: #2ECC71;
     --yellow-secondary: #fee5a1;
@@ -35,12 +36,30 @@ p {
     color: var(--gray);
 }
 
+input, select{
+    padding: 5px ;
+    border-radius: 8px;
+    border: 1px solid var(--borderInput);
+    box-shadow: var(--box-shadow);
+    outline: none;
+}
+
 input[type="radio"] {
     padding: 5px;
     width: 30px;
     height: 25px;
     cursor: pointer;
 
+}
+
+.input-sm{
+    width: 100px;
+}
+.input-md{
+    width: 200px;
+}
+.input-lg{
+    width: 300px;
 }
 
 button {
@@ -127,4 +146,20 @@ button {
     justify-content: center;
     border-radius: 8px;
     font-size: 25px;
+}
+
+.fieldGroup{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.fieldInput{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 0.8rem;
+    color: var(--gray);
 }
